@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{amsthm, amsmath}
+
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+
+\begin{document}
+
+\section*{Statistics Formula Sheet}
+
+\begin{definition}[Probability]
+The probability of an event \(A\) is given by:
+$$
+P(A) = \frac{\text{Number of favorable outcomes}}{\text{Total number of outcomes}}
+$$
+\end{definition}
+
+\begin{definition}[Mean]
+The mean \( \bar{x} \) of a dataset is:
+$$
+\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+$$
+\end{definition}
+
+\begin{theorem}[Variance]
+The variance \( \sigma^2 \) is calculated as:
+$$
+\sigma^2 = \frac{1}{n} \sum_{i=1}^{n} (x_i - \bar{x})^2
+$$
+\end{theorem}
+
+\begin{theorem}[Normal Distribution]
+The normal distribution function \( f(x) \) is:
+$$
+f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2} \left(\frac{x-\mu}{\sigma} \right)^2}
+$$
+\end{theorem}
+
+\end{document}

@@ -1,0 +1,100 @@
+\documentclass{article}
+
+\usepackage{amsmath} % For advanced math features
+\usepackage{amsfonts} % For mathematical fonts
+\usepackage{amssymb} % For symbols
+
+\begin{document}
+
+\title{Statistical Formulas}
+\author{Your Name}
+\date{\today}
+\maketitle
+
+\section{Introduction}
+
+This document contains common statistical formulas used in data analysis and probability theory.
+
+\section{Mean (Average)}
+The arithmetic mean of a dataset \(x_1, x_2, \dots, x_n\) is given by:
+
+\[
+\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+\]
+
+Where:
+- \( \bar{x} \) is the sample mean.
+- \( n \) is the number of data points.
+
+\section{Variance}
+The variance of a dataset measures the spread of the data. The formula for the population variance \(\sigma^2\) is:
+
+\[
+\sigma^2 = \frac{1}{N} \sum_{i=1}^{N} (x_i - \mu)^2
+\]
+
+Where:
+- \( \sigma^2 \) is the population variance.
+- \( N \) is the number of data points.
+- \( \mu \) is the population mean.
+
+For sample variance \(s^2\), the formula is:
+
+\[
+s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2
+\]
+
+Where \( \bar{x} \) is the sample mean.
+
+\section{Standard Deviation}
+The standard deviation is the square root of the variance. The formula for the population standard deviation \(\sigma\) is:
+
+\[
+\sigma = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (x_i - \mu)^2}
+\]
+
+For sample standard deviation \(s\), the formula is:
+
+\[
+s = \sqrt{\frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2}
+\]
+
+\section{Correlation}
+The correlation coefficient between two variables \(X\) and \(Y\) is given by:
+
+\[
+r = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n} (x_i - \bar{x})^2 \sum_{i=1}^{n} (y_i - \bar{y})^2}}
+\]
+
+Where:
+- \(r\) is the Pearson correlation coefficient.
+- \(x_i\) and \(y_i\) are the data points for variables \(X\) and \(Y\), respectively.
+- \( \bar{x} \) and \( \bar{y} \) are the means of \(X\) and \(Y\).
+
+\section{Linear Regression}
+The equation for a simple linear regression line is:
+
+\[
+y = \beta_0 + \beta_1 x
+\]
+
+Where:
+- \(y\) is the dependent variable.
+- \(x\) is the independent variable.
+- \(\beta_0\) is the intercept.
+- \(\beta_1\) is the slope of the line.
+
+The formulas for calculating \(\beta_0\) and \(\beta_1\) are:
+
+\[
+\beta_1 = \frac{n \sum_{i=1}^{n} x_i y_i - \sum_{i=1}^{n} x_i \sum_{i=1}^{n} y_i}{n \sum_{i=1}^{n} x_i^2 - \left(\sum_{i=1}^{n} x_i\right)^2}
+\]
+
+\[
+\beta_0 = \bar{y} - \beta_1 \bar{x}
+\]
+
+Where:
+- \( \bar{x} \) and \( \bar{y} \) are the means of the variables \(x\) and \(y\), respectively.
+
+\end{document}

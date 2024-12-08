@@ -1,0 +1,50 @@
+\documentclass{article}
+
+\usepackage{amsmath} % For advanced math features
+
+\begin{document}
+
+\subsection*{Mean (Average)}
+\[
+\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+\]
+
+\subsection*{Variance}
+Population variance:
+\[
+\sigma^2 = \frac{1}{N} \sum_{i=1}^{N} (x_i - \mu)^2
+\]
+Sample variance:
+\[
+s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2
+\]
+
+\subsection*{Standard Deviation}
+Population standard deviation:
+\[
+\sigma = \sqrt{\frac{1}{N} \sum_{i=1}^{N} (x_i - \mu)^2}
+\]
+Sample standard deviation:
+\[
+s = \sqrt{\frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2}
+\]
+
+\subsection*{Correlation}
+\[
+r = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i=1}^{n} (x_i - \bar{x})^2 \sum_{i=1}^{n} (y_i - \bar{y})^2}}
+\]
+
+\subsection*{Linear Regression}
+Regression line:
+\[
+y = \beta_0 + \beta_1 x
+\]
+Slope and intercept:
+\[
+\beta_1 = \frac{n \sum_{i=1}^{n} x_i y_i - \sum_{i=1}^{n} x_i \sum_{i=1}^{n} y_i}{n \sum_{i=1}^{n} x_i^2 - \left(\sum_{i=1}^{n} x_i\right)^2}
+\]
+\[
+\beta_0 = \bar{y} - \beta_1 \bar{x}
+\]
+
+\end{document}
